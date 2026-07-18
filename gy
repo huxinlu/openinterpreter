@@ -1,0 +1,11 @@
+import random
+import string
+
+def generate_password(length=12):
+    # 包含大小写字母、数字和特殊符号
+    chars = string.ascii_letters + string.digits + string.punctuation
+    password = ''.join(random.choice(chars) for _ in range(length))
+    return password
+
+if __name__ == "__main__":
+    print("为您生成的16位专属强密码是:", generate_password(16))
