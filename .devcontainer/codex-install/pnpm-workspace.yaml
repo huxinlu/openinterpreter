@@ -8,5 +8,5 @@ blockExoticSubdeps: true
 strictDepBuilds: true
 trustPolicy: no-downgrade
 trustPolicyIgnoreAfter: 10080
-trustPolicyExclude: []
+trustPolicyExclude
 allowBuilds: {}
