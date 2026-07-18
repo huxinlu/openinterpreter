@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>点赞小玩具</title>
+    <style>
+        body { text-align: center; margin-top: 100px; font-family: '微软雅黑', sans-serif; }
+        button { padding: 15px 30px; font-size: 24px; cursor: pointer; border-radius: 10px; border: none; background-color: #007BFF; color: white; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>今天你点赞了吗？</h1>
+    <h2>点赞数: <span id="count">0</span></h2>
+    <button onclick="addLike()">👍 点个赞</button>
+
+    <script>
+        let count = 0;
+        function addLike() {
+            count++;
+            document.getElementById("count").innerText = count;
+        }
+    </script>
+</body>
+</html>
